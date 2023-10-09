@@ -9,4 +9,3 @@ workflows:
     jobs:
       - circleci/config:
           location: https://github.com/aditi7gupta7/gnew1.git
-          config-path: .circleci/config.yml
