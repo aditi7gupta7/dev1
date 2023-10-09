@@ -1,12 +1,12 @@
 version: 2.1
 
 orbs:
-  sdks-common-config: revenuecat/sdks-common-config@2.2.0
+  circleci: circleci/config@2.2.0
 
 workflows:
   version: 2
   build:
     jobs:
-      - sdks-common-config/circleci-config:
+      - circleci/config:
           location: https://github.com/aditi7gupta7/gnew1.git
           config-path: .circleci/config.yml
