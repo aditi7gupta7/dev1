@@ -1,11 +1,10 @@
 version: 2.1
 
-orbs:
-  circleci: circleci/config@2.1.0
+includes:
+ - remote: 'https://github.com/aditi7gupta7/gnew1.git/.circleci/config.yml'
 
 workflows:
   version: 2
   build:
     jobs:
-      - circleci/config:
-          location: https://github.com/aditi7gupta7/gnew1.git
+     - build-java-app
